@@ -23,13 +23,27 @@
     
 // }
 
-let clickk=()=>{
-    let arr=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-    let time=new Date();
-    let ans=document.querySelector("#dates")
-    ans.innerHTML=arr[time.getDay()]
+// let clickk=()=>{
+//     let arr=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+//     let time=new Date();
+//     let ans=document.querySelector("#dates")
+//     ans.innerHTML=arr[time.getDay()]
+
+// }
+
+
+
+let alarm=()=>{
+    let show=document.querySelector("#display")
+    let inp=document.querySelector("#inp").value;
+
+    let date=new Date()
+    let alarmtime=`$`
 
 }
+
+
+
 
 
 
