@@ -4,7 +4,8 @@ let alaram=()=>{
     let inp=document.querySelector("#inp").value
     let inter=setInterval(()=>{
       let abcd=new Date()
-      let alaramtime=`${abcd.getHours().toString().padStart(2,"0")}:${abcd.getMinutes().toString().padStart(2,"0")}`
+      let alaramtime=`${abcd.getHours().toString().padStart(2,"0")}:
+      ${abcd.getMinutes().toString().padStart(2,"0")}`
       if (alaramtime==inp) {
         show.innerHTML="Alarm is ringing"
         document.querySelector("#aud").play()
