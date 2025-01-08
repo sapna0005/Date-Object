@@ -1,7 +1,6 @@
-let age=()=>{
-    let ans=document.querySelector("#display").value
-    let date=new Date().getFullYear();
-    let ans1=date-ans;
-    document.querySelector("#display-1").innerHTML=`Your current age is ${ans1}`
-    
-}
+let cal = () => {
+    let ans = document.querySelector("#age").value; 
+    let currentYear = new Date().getFullYear();
+    let age = currentYear - ans; 
+    document.querySelector("#result").innerHTML = `Your current age is ${age}`;
+  }

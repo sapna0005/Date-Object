@@ -1,56 +1,61 @@
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    font-family: 'Arial', sans-serif;
-    background-color: #eaeaea;
-    color: #333;
+    margin: 0;
+    background-color: #f4f4f9;
 }
 
-input[type="number"] {
-    width: 320px;
-    padding: 12px;
-    margin: 12px 0;
+#center {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgb(76, 74, 74);
+    background-color: white;
+    
+}
+
+
+#age {
+    padding: 8px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-input[type="number"]:focus {
-    border-color: #4CAF50;
-    outline: none;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-p#display-1 {
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 200px;
     text-align: center;
 }
 
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: orangered;
+}
+
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    animation: bounce 2s infinite ease-in-out; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-30px); 
+    }
+}
