@@ -14,30 +14,14 @@
     animation: bounce 2s infinite ease-in-out; 
    
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
+
 #box1 div{
     width: 50px;
     height: 50px;
     border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    animation: bounce 2s infinite ease-in-out; 
     box-shadow: 2px 4px 12px whitesmoke;
-}
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
 }
 
 #box2{
@@ -54,17 +38,7 @@
     align-items: center;
     gap: 30px;
     opacity: 0;
-    animation: bounce 2s infinite ease-in-out; 
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
-
 
 #box2 div{
     width: 50px;
@@ -72,18 +46,8 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    animation: bounce 2s infinite ease-in-out;
     box-shadow: 2px 4px 12px whitesmoke; 
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
-
 
 #box3{
     width: 300px;
@@ -99,35 +63,16 @@
     align-items: center;
     gap: 30px;
     opacity: 0;
-    animation: bounce 2s infinite ease-in-out; 
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
-
-
 #box3 div{
     width: 50px;
     height: 50px;
     border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    animation: bounce 2s infinite ease-in-out; 
     box-shadow: 2px 4px 12px whitesmoke;
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
+
 
 #box4{
     width: 300px;
@@ -145,15 +90,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
 
-    animation: bounce 2s infinite ease-in-out; 
-}
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
 }
 
 #box4 div{
@@ -165,16 +101,8 @@
     margin-left: 50px;
     margin-top: 20px;
     box-shadow: 2px 4px 12px whitesmoke;
-    animation: bounce 2s infinite ease-in-out; 
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
+
 
 #box5 {
     width: 300px;
@@ -186,23 +114,13 @@
     top: 30%;
     left: 40%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Create 3 equal-width columns */
-    grid-template-rows: 1fr 1fr 1fr; /* Create 3 equal-height rows */
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
     gap: 10px;
     justify-items: center; 
     align-items: center;
     opacity: 0;
-    animation: bounce 2s infinite ease-in-out; 
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
-
 
 #box5 div {
     width: 50px;
@@ -210,42 +128,32 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    animation: bounce 2s infinite ease-in-out; 
     margin-top: 30px;
     box-shadow: 2px 4px 12px whitesmoke;
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
-
 
 #box5 div:nth-child(1) {
-    grid-column: 1; /* Top-left corner */
+    grid-column: 1; 
     grid-row: 1;
 }
 
 #box5 div:nth-child(2) {
-    grid-column: 3; /* Top-right corner */
+    grid-column: 3; 
     grid-row: 1;
 }
 
 #box5 div:nth-child(3) {
-    grid-column: 1; /* Bottom-left corner */
+    grid-column: 1; 
     grid-row: 3;
 }
 
 #box5 div:nth-child(4) {
-    grid-column: 3; /* Bottom-right corner */
+    grid-column: 3; 
     grid-row: 3;
 }
 
 #box5 div:nth-child(5) {
-    grid-column: 2; /* Center */
+    grid-column: 2; 
     grid-row: 2;
 }
 
@@ -267,18 +175,7 @@
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
     gap: 10px;
-    animation: bounce 2s infinite ease-in-out; 
 }
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
-}
-
-   
 
 #box6 div{
     width: 50px;
@@ -289,15 +186,6 @@
     margin-left: 20px;
     margin-top: 30px;
     box-shadow: 2px 4px 12px whitesmoke;
-    animation: bounce 2s infinite ease-in-out; 
-}
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-30px); 
-    }
 }
 
 button{
@@ -306,7 +194,7 @@ button{
     left: 46%;
     padding: 15px 30px;
     color: white;
-    background-color: darkolivegreen;
+    background-color: rgb(53, 69, 27);
     font-size: 1.5rem;
     font-weight: bold;
     border: none;
@@ -314,5 +202,5 @@ button{
     border-radius: 20px;
 }
 button:hover{
-    background-color: orangered;
+    background-color: rgb(13, 62, 13);
 }

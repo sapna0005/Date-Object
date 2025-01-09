@@ -1,22 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+body{
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background-color: #222324;
+font-family: 'Poppins', sans-serif;
+color: white;
+transition: all 0.5s ease-in-out;
+overflow-x: hidden;
+background-image: url(./Alarm-1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+}
+
+#clock-container{
+    width: auto;
+    height: auto;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-#abc {
-    background: #fff;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+    flex-direction: column;
+    transition: all 0.1s ease-in-out;
 }
 
 #inp {
