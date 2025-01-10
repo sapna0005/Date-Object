@@ -1,6 +1,6 @@
 let swiper=new Swiper('.swiper',{
     navigation: {
-        nextEl: ".swiper-button-next",
+        nextEl: ".next",
         prevEl: ".swiper-button-prev",
       }
 })
