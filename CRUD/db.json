@@ -1,0 +1,22 @@
+{
+
+    "doctor":[
+        {
+         "name":"sapna",
+         "age":25,
+         "number":96634567788,
+         "problem":"Cold",
+         "date":"25-01-2025",
+         "price":250
+        },
+        {
+            "name":"aayushi",
+            "age":20,
+            "number":9643580987,
+            "problem":"Cold",
+            "date":"25-01-2025",
+            "price":450
+        }
+    ]
+
+}
