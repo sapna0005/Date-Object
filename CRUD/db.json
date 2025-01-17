@@ -6,7 +6,7 @@
          "age":25,
          "number":96634567788,
          "problem":"Cold",
-         "date":"25-01-2025",
+         "date":"15-01-2025",
          "price":250
         },
         {
@@ -14,8 +14,16 @@
             "age":20,
             "number":9643580987,
             "problem":"Cold",
-            "date":"25-01-2025",
-            "price":450
+            "date":"16-01-2025",
+            "price":250
+        },
+        {
+            "name":"sara",
+            "age":19,
+            "number":9643580667,
+            "problem":"Cold",
+            "date":"17-01-2025",
+            "price":250
         }
     ]
 

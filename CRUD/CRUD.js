@@ -16,7 +16,28 @@ console.log(data);
 // fetch method is aynchronous to convert it into syncronous we use async and await keyword
 
 
+let show=document.querySelector("#display")
+data.map((e)=>{
+    show.innerHTML+=`
+      <tr>
+         <td>${e.name}</td>
+         <td>${e.age}</td>
+         <td>${e.number}</td>
+         <td>${e.problem}</td>
+         <td>${e.date}</td>
+         <td>${e.price}</td>
+         <td onclick="deletee('${e.id}')">Delete</td>
+      </tr>
+    `
+})
 }
+
+let deletee=(id)=>{
+    let url=`http://localhost:3000/doctor/${id}`
+    fetch(url,{method:"DELETE"})
+}
+
+
 
 
 
