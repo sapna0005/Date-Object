@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 15px;
+   
+}
+legend{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(211, 7, 85);
+}
+th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+th {
+    background:linear-gradient(to left, rgb(3, 56, 3), rgb(153, 193, 153));
+    color: white;
+}
+td{
+    background:linear-gradient(to left, rgb(6, 135, 145),rgb(160, 226, 221));
+    color: white; 
+}

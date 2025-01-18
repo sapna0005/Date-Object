@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
     <title>Document</title>
 </head>
 <body onload="fetchData()">
-
-    <table border="1" align="center" cellspacing="20px" cellpadding="10px">
+    <fieldset>
+     <legend>Form Data</legend>
+    <table align="center" cellspacing="20px" cellpadding="10px">
+       
         <thead>
+            
             <tr>
                 <th>Name</th>
                 <th>Age</th>
@@ -16,16 +20,17 @@
                 <th>Disease</th>
                 <th>Date</th>
                 <th>Price</th>
-                <th>Cancel</th>
+                <th>ID</th>
+                <th >Cancel</th>
 
             </tr>
         </thead>
     
     <tbody id="display">
-
+        
     </tbody>
 </table>
-
+</fieldset>
 
     <script src="CRUD.js"></script>
 </body>
