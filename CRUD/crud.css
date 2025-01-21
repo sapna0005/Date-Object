@@ -5,8 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-   
-    height: auto;
+   height:100vh;
+   background-image: url(https://images.pexels.com/photos/21787/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 fieldset{
@@ -46,18 +49,40 @@ td{
 }
 
 form{
-    border: 1px solid black;
-    height:350px ;
-    width: 300px;
+    border: 1px solid rgb(137, 130, 130);
+    box-shadow: 0px 2px 4px;
+    border-radius: 10px;
+    height:500px ;
+    width: 350px;
     position: absolute;
-    left: 70%;
-    top: 15%;
+    left: 63%;
+    top: 7%;
     padding: 10px;
-    
 }
 
 h3{
+    text-align: center;
    color:rgb(17, 78, 191); 
+}
+label{
+    color: white;
+}
+
+input[type="text"],
+input[type="date"],
+select{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 5px;
+  width: 100%;
+}
+input[type="submit"]{
+    padding: 8px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(9, 164, 9), rgb(157, 211, 157));
+    border: none;
 }
 
     

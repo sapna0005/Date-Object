@@ -106,29 +106,28 @@ let updatee=async(id)=>{
    <h3>Update Here....</h3>
    <br>
    <label for="upname" >Enter Name:</label>
-        <input type="text" id="upname" value="${data.name}" placeholder="Enter your name"> <br><br>
+        <input type="text" id="upname" value="${data.name}" placeholder="Enter your name"> <br>
 
         <label for="upage">Enter Age:</label>
-        <input type="text" id="upage" value="${data.age}" placeholder="Enter your age"> <br><br>
+        <input type="text" id="upage" value="${data.age}" placeholder="Enter your age"> <br>
 
         <label for="upnumber">Enter Number:</label>
-        <input type="text" id="upnumber" value="${data.number}" placeholder="Enter mobile number"> <br> <br>
+        <input type="text" id="upnumber" value="${data.number}" placeholder="Enter mobile number"> <br>
 
         <label for="updisease">Disease:</label>
-        <select  id="updisease" value="${data.problem}"> 
-            <option value="cold">cold</option>
-            <option value="cough">cough</option>
-            <option value="heart">heart</option>
-            <option value="cancer">cancer</option>
-            <option value="pain">pain</option>
-        </select>
-       <br> <br>
+        <select id="updisease">
+        <option value="cold" ${data.problem === 'cold' ? 'selected' : ''}>cold</option>
+        <option value="cough" ${data.problem === 'cough' ? 'selected' : ''}>cough</option>
+        <option value="heart" ${data.problem === 'heart' ? 'selected' : ''}>heart</option>
+        <option value="cancer" ${data.problem === 'cancer' ? 'selected' : ''}>cancer</option>
+        <option value="pain" ${data.problem === 'pain' ? 'selected' : ''}>pain</option>
+      </select><br>
 
        <label for="update">Enter Date:</label>
-        <input type="date" id="inpdate" value="${data.date}"><br> <br>
+        <input type="date" id="update" value="${data.date}"><br> 
 
         <label for="upprice">Enter Price:</label>
-        <input type="text" id="inpprice" value="${data.price}" placeholder="Enter price"><br> <br>
+        <input type="text" id="upprice" value="${data.price}" placeholder="Enter price"><br> <br> 
 
 
    <input type="submit" value="Update" onclick="return finalUpdate('${data.id}')">
@@ -159,11 +158,11 @@ let updatee=async(id)=>{
           number:inpnumber,
           problem:inpdisease,
           date:inpdate,
-          price: 250
+          price: inpprice
     
       })
     
-    })
+    });
     return false;
   }
 
