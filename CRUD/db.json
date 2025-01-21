@@ -2,39 +2,30 @@
   "doctor": [
     {
       "name": "sapna",
-      "age": 25,
-      "number": 96634567788,
-      "problem": "Cold",
-      "date": "15-01-2025",
-      "price": 250,
+      "age": "25",
+      "number": "96634567788",
+      "problem": "cold",
+      "date": "2025-01-22",
+      "price": "300",
       "id": "13fc"
     },
     {
       "name": "aayushi",
-      "age": 20,
-      "number": 9643580987,
-      "problem": "Cold",
-      "date": "16-01-2025",
-      "price": 250,
+      "age": "20",
+      "number": "9643580987",
+      "problem": "cold",
+      "date": "2025-01-24",
+      "price": "250",
       "id": "bb4f"
     },
     {
       "name": "SARA",
-      "age": 20,
-      "number": 9643580987,
-      "problem": "Cold",
-      "date": "16-01-2025",
-      "price": 250,
-      "id": "e11b"
-    },
-    {
-      "id": "0370",
-      "name": "sana",
-      "age": "19",
-      "number": "9988776654",
+      "age": "20",
+      "number": "9643580987",
       "problem": "cold",
-      "date": "2025-01-22",
-      "price": "250"
+      "date": "2025-01-30",
+      "price": "250",
+      "id": "e11b"
     }
   ]
 }

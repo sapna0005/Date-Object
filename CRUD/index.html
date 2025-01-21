@@ -9,6 +9,9 @@
 <body onload="fetchData()">
     <fieldset>
      <legend>Form Data</legend>
+     <div>
+        <input type="search"  id="search" placeholder="Search By Name" oninput="filterout()">
+    </div>
     <table align="center" cellspacing="20px" cellpadding="10px">
        
         <thead>
@@ -20,7 +23,6 @@
                 <th>Disease</th>
                 <th>Date</th>
                 <th>Price</th>
-                <th>ID</th>
                 <th >Cancel</th>
                 <th >Update</th>
 

@@ -4,18 +4,31 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+   
+    height: auto;
+}
 
 fieldset{
-    position: absolute;
-    top: 20%;
-    left: 20%;
+   height: auto;
     border-radius: 15px;
-   
+  position: absolute;
+  top: 20%;
+  left: 2%;
 }
 legend{
     text-align: center;
     font-size: 2rem;
     color: rgb(211, 7, 85);
+}
+#search{
+width: 35%;
+padding: 5px;
+margin-left: 8px;
+border-radius: 5px;
+border: 1px solid gray;
+outline: none;
+
 }
 th, td {
     border: 1px solid;
@@ -31,3 +44,20 @@ td{
     background:linear-gradient(to left, rgb(6, 135, 145),rgb(160, 226, 221));
     color: white; 
 }
+
+form{
+    border: 1px solid black;
+    height:350px ;
+    width: 300px;
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    padding: 10px;
+    
+}
+
+h3{
+   color:rgb(17, 78, 191); 
+}
+
+    

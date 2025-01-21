@@ -1,38 +1,50 @@
-// console.log("received");
-// setTimeout(()=>{
-//     console.log("process");
-// },3000)
 
-// console.log("completed");
+let fetchData = async () => {
+  let url = "http://localhost:3000/doctor";
+  let res = await fetch(url, { method: "GET" });
+  let data = await res.json();
 
-let fetchData=async()=>{
-    let url="http://localhost:3000/doctor"
-    let res=await fetch(url,{method:"GET"})//method we are using here is method get
-    let data=await res.json()
+  console.log(data);
+  let show = document.querySelector("#display");
+  show.innerHTML = "";
 
-//    by default behavoiur of fetch is get
+  data.forEach((e) => {
+      show.innerHTML += `
+          <tr data-id="${e.id}">
+              <td>${e.name}</td>
+              <td>${e.age}</td>
+              <td>${e.number}</td>
+              <td>${e.problem}</td>
+              <td>${e.date}</td>
+              <td>${e.price}</td>
+              <td onclick="deelete('${e.id}')">Delete</td>
+              <td onclick="updatee('${e.id}')">Update</td>
+          </tr>
+      `
+  });
+};
 
-console.log(data);
-// fetch method is aynchronous to convert it into syncronous we use async and await keyword
+
+let filterout = () => {
+  let searchQuery = document.querySelector("#search").value.toLowerCase();
+  let tableRows = document.querySelectorAll("#display tr");
+
+  tableRows.forEach(row => {
+      let name = row.cells[0].textContent.toLowerCase();
+      if (name.includes(searchQuery)) {
+          row.style.display = '';
+      } else {
+          row.style.display = 'none';
+      }
+  });
+};
+
+window.onload = () => {
+  fetchData();
+};
 
 
-let show=document.querySelector("#display")
-data.map((e)=>{
-    show.innerHTML+=`
-      <tr>
-         <td>${e.name}</td>
-         <td>${e.age}</td>
-         <td>${e.number}</td>
-         <td>${e.problem}</td>
-         <td>${e.date}</td>
-         <td>${e.price}</td>
-         <td>${e.id}</td>
-         <td onclick="deelete('${e.id}')">Delete</td>
-         <td onclick="updatee('${e.id}')">Update</td>
-      </tr>
-    `
-})
-}
+
 
 let deelete=(id)=>{
     let url=`http://localhost:3000/doctor/${id}`
@@ -73,62 +85,67 @@ let insertt=()=>{
     
 }
 
-VANTA.FOG({
-  el: "#form-details",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00
-})
+// VANTA.FOG({
+//   el: "#form-details",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.00,
+//   minWidth: 200.00
+// })
 
 let updatee=async(id)=>{
-  let url=`http://localhost:3000/doctor"/${id}`
+  let url=`http://localhost:3000/doctor/${id}`
   let res=await fetch(url)
   let data=await res.json()
   console.log(data);
   
    let Formdata=`
    
+   <form >
+   <h3>Update Here....</h3>
+   <br>
    <label for="upname" >Enter Name:</label>
-        <input type="text" value="${data.name}" id="upname" placeholder="Enter your name"><br>
+        <input type="text" id="upname" value="${data.name}" placeholder="Enter your name"> <br><br>
 
-        <label for="uppage">Enter Age:</label>
-        <input type="text" id="uppage" value="${data.age}" placeholder="Enter your age"><br>
+        <label for="upage">Enter Age:</label>
+        <input type="text" id="upage" value="${data.age}" placeholder="Enter your age"> <br><br>
 
         <label for="upnumber">Enter Number:</label>
-        <input type="text" id="upnumber" value="${data.number}" placeholder="Enter mobile number"><br>
+        <input type="text" id="upnumber" value="${data.number}" placeholder="Enter mobile number"> <br> <br>
 
         <label for="updisease">Disease:</label>
-        <select  id="updisease"> 
+        <select  id="updisease" value="${data.problem}"> 
             <option value="cold">cold</option>
             <option value="cough">cough</option>
             <option value="heart">heart</option>
             <option value="cancer">cancer</option>
             <option value="pain">pain</option>
         </select>
-       <br>
+       <br> <br>
 
        <label for="update">Enter Date:</label>
-        <input type="date" id="update" value="${data.data}"><br>
+        <input type="date" id="inpdate" value="${data.date}"><br> <br>
 
         <label for="upprice">Enter Price:</label>
-        <input type="text" id="upprice" placeholder="Enter price"><br>
+        <input type="text" id="inpprice" value="${data.price}" placeholder="Enter price"><br> <br>
 
-           <input type="submit" value="Update" onclick="return finalUpdate('${data.id}')">
-`
+
+   <input type="submit" value="Update" onclick="return finalUpdate('${data.id}')">
+   </form>
+` 
     document.querySelector("#updateform").innerHTML=Formdata
   }
 
-  let finalUpdate=(id)=>{
+    let finalUpdate=(id)=>{
     let inpname=document.querySelector("#upname").value;
-    let inpage=document.querySelector("#uppage").value;
+    let inpage=document.querySelector("#upage").value;
     let inpnumber=document.querySelector("#upnumber").value;
     let inpdisease=document.querySelector("#updisease").value;
     let inpdate=document.querySelector("#update").value;
     let inpprice=document.querySelector("#upprice").value;
 
-    let url=`http://localhost:3000/doctor"/${id}`
+    let url=`http://localhost:3000/doctor/${id}`
 
     fetch(url,{
       method:"PUT",
@@ -147,6 +164,7 @@ let updatee=async(id)=>{
       })
     
     })
+    return false;
   }
 
 
