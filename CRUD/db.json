@@ -1,15 +1,6 @@
 {
   "doctor": [
     {
-      "name": "sapna",
-      "age": "28",
-      "number": "96634567788",
-      "problem": "cough",
-      "date": "2025-01-22",
-      "price": "300",
-      "id": "13fc"
-    },
-    {
       "name": "aayushi",
       "age": "20",
       "number": "9643580987",

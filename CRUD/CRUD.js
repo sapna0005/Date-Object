@@ -85,14 +85,6 @@ let insertt=()=>{
     
 }
 
-// VANTA.FOG({
-//   el: "#form-details",
-//   mouseControls: true,
-//   touchControls: true,
-//   gyroControls: false,
-//   minHeight: 200.00,
-//   minWidth: 200.00
-// })
 
 let updatee=async(id)=>{
   let url=`http://localhost:3000/doctor/${id}`
