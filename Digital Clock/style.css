@@ -8,7 +8,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url(./digitalclock.jpg);
+    background-image: url(./clock-image.webp);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -27,34 +27,35 @@ body{
 
 .hours {
     
-    color: white;
+    color:white;
     font-weight: bold;
-    border:1px solid cornflowerblue;
+    border:1px;
     border-radius: 25px;
-    padding: 10px;
-    background-color: cornflowerblue;
-    box-shadow: 4px 8px 10px rgb(33, 105, 230);
+    padding: 12px;
+    background-color: #D39D55;
+    
 }
 
 .minutes {
     color: white;
     font-weight: bold;
-    border: 1px solid cornflowerblue;
+    border: 1px;
     border-radius: 25px;
-    padding: 10px;
-    background-color: cornflowerblue;
-    box-shadow: 4px 8px 10px rgb(33, 105, 230);
+    padding: 12px;
+    background-color:#D39D55;
+    
 }
 
 .seconds {
     color: white;
     font-weight: bold;
-    border: 1px solid cornflowerblue;
+    border: 1px;
     border-radius: 25px;
-    padding: 10px;
-    background-color: cornflowerblue;
-    box-shadow: 4px 8px 10px rgb(33, 105, 230);;
+    padding: 12px;
+    background-color:#D39D55;
+    
 }
 .colon{
-    color: white
+    color: white;
+   
 }

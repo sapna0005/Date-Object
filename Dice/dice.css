@@ -1,37 +1,40 @@
 #box1{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color:#002244 ;
+    border: 1px;
+    border-radius: 40px;
+    background:linear-gradient(to top, #4DA1A9,#72BAA9, #79D7BE,#adebda);
+    border: none;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 40%;
     display:flex ;
     justify-content: center;
     align-items: center;
     opacity: 0;
     animation: bounce 2s infinite ease-in-out; 
-   
+    
 }
 
 #box1 div{
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    box-shadow: 2px 4px 12px whitesmoke;
+    box-shadow: 2px 4px 8px #3AA6B9;
+    border: 1px;
+    z-index: 999;
 }
 
 #box2{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color:#002244  ;
+    border: 1px;
+    border-radius: 40px;
+    background:linear-gradient(to top, #4DA1A9,#72BAA9, #79D7BE,#adebda);
+    border: none;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 40%;
     display:flex ;
     justify-content: center;
@@ -43,20 +46,22 @@
 #box2 div{
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    box-shadow: 2px 4px 12px whitesmoke; 
+    box-shadow: 2px 4px 8px #3AA6B9;
+    border: 1px;
+    z-index: 999;
 }
 
 #box3{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color:#002244 ;
+    border: 1px;
+    border-radius: 40px;
+    background:linear-gradient(to top, #4DA1A9,#72BAA9, #79D7BE,#adebda);
+    border: none;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 40%;
     display:flex ;
     justify-content: center;
@@ -67,21 +72,23 @@
 #box3 div{
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     border-radius: 50%;
     background-color:white;
-    box-shadow: 2px 4px 12px whitesmoke;
+    box-shadow: 2px 4px 8px #3AA6B9;
+    border: 1px;
+    z-index: 999;
 }
 
 
 #box4{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color:#002244 ;
+    border: 1px;
+    border-radius: 40px;
+    background:linear-gradient(to top, #4DA1A9,#72BAA9, #79D7BE,#adebda);
+    border: none;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 40%;
     display:flex ;
     justify-content: center;
@@ -95,23 +102,25 @@
 #box4 div{
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     border-radius: 50%;
     background-color:white;
     margin-left: 50px;
     margin-top: 20px;
-    box-shadow: 2px 4px 12px whitesmoke;
+    box-shadow: 2px 4px 8px #3AA6B9;
+    border: 1px;
+    z-index: 999;
 }
 
 
 #box5 {
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color:#002244 ;
+    border: 1px;
+    border-radius: 40px;
+    background:linear-gradient(to top, #4DA1A9,#72BAA9, #79D7BE,#adebda);
+    border: none;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -125,11 +134,12 @@
 #box5 div {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     border-radius: 50%;
     background-color:white;
     margin-top: 30px;
-    box-shadow: 2px 4px 12px whitesmoke;
+    box-shadow: 2px 4px 8px #3AA6B9;
+    border: 1px;
+    z-index: 999;
 }
 
 #box5 div:nth-child(1) {
@@ -161,11 +171,12 @@
 #box6{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color:#002244 ;
+    border: 1px;
+    border-radius: 40px;
+    background:linear-gradient(to top, #4DA1A9,#72BAA9, #79D7BE,#adebda);
+    border: none;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 40%;
     display:flex ;
     justify-content: center;
@@ -180,27 +191,33 @@
 #box6 div{
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     border-radius: 50%;
     background-color:white;
     margin-left: 20px;
     margin-top: 30px;
-    box-shadow: 2px 4px 12px whitesmoke;
+    box-shadow: 2px 4px 8px #3AA6B9;
+    border: 1px;
+    z-index: 999;
 }
 
 button{
     position: absolute;
-    top: 85%;
+    top: 72%;
     left: 46%;
+    font-family:"Signika Negative", serif;
+    font-weight:900;
+    font-style: normal;
     padding: 15px 30px;
     color: white;
-    background-color: rgb(53, 69, 27);
-    font-size: 1.5rem;
-    font-weight: bold;
+    background-color: #7c79cb;
+    font-size: 1.8rem;
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    z-index: 1000;
+    letter-spacing: 0.5px;
+    box-shadow: 2px 4px 10px solid black;
 }
 button:hover{
-    background-color: rgb(13, 62, 13);
+    background-color:#FF9EAA;
 }
